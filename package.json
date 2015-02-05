@@ -1,0 +1,27 @@
+{
+  "name": "gulp-snowcrash",
+  "version": "0.0.1",
+  "description": "Gulp snowcrash to create documentation with API Blueprint",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markotom/gulp-snowcrash"
+  },
+  "keywords": [
+    "gulp",
+    "snowcrash",
+    "api",
+    "blueprint"
+  ],
+  "author": "Marco Godínez <markotom@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/markotom/gulp-snowcrash/issues"
+  },
+  "homepage": "https://github.com/markotom/gulp-snowcrash",
+  "dependencies": {
+    "gulp-util": "^3.0.3",
+    "protagonist": "^0.17.1",
+    "through2": "^0.6.3"
+  }
+}
