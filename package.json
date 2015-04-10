@@ -1,6 +1,6 @@
 {
   "name": "gulp-snowcrash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gulp snowcrash to create documentation with API Blueprint",
   "license": "MIT",
   "main": "index.js",
