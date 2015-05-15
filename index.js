@@ -21,6 +21,11 @@ module.exports = function (options) {
 		var self = this;
 
 		protagonist.parse(file.contents.toString(), function (error, result) {
+
+			if (error) {
+				return cb(new PluginError('gulp-snowcrash', error));
+			}
+
 			try {
 
 				var newfile = new gutil.File({
@@ -36,11 +41,11 @@ module.exports = function (options) {
 
 			} catch (e) {
 
-				throw new PluginError('gulp-snowcrash', error);
-				cb(error);
+				cb(new PluginError('gulp-snowcrash', e));
 
 			}
 
 		});
 	});
 };
+
