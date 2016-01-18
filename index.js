@@ -32,7 +32,7 @@ module.exports = function (options) {
 					base: file.base,
 					cwd: file.cwd,
 					path: gutil.replaceExtension(file.path, '.' + options.format),
-					contents: new Buffer(JSON.stringify(result.ast, null, 2))
+					contents: new Buffer(JSON.stringify(result, null, 2))
 				});
 
 				self.push(newfile);
